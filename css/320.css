@@ -1,0 +1,623 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*========= COLORS =========*/
+
+:root {
+    --Negrito: #707070;
+    --BackRosita: #D9C2B9;
+    --MarronTitulosyTexto: #975130;
+    --TierraBotones: #B27C65;
+    --TierraBotonesHover: #d18564;
+    --Clarito: #F2EAE7;
+}
+
+/*========= BODY =========*/
+
+
+
+/*========= HEADER =========*/
+
+header {
+    position: sticky;
+    top: 0px;
+    background-color: rgba(250, 250, 250, 0.95);
+    z-index: 30;
+}
+
+#logo-name {
+    padding: 25px 0 0 20px;
+}
+
+#logo-name a{
+    font-family: "elephant";
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--MarronTitulosyTexto);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+#logo-name a p:nth-child(2){
+    font-family: "GothamLight";
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+/*========= MENU =========*/
+
+.menu {
+    display: none;
+    position: fixed;
+    text-align: left;
+    position: absolute;
+    left: 0px;
+    bottom: calc(-100vh + 65.1px);
+    background-color: rgba(250, 250, 250, 0.95);
+    width: 100%;
+    height: calc(100vh - 65px);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li{
+    font-family: "GothamLight";
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 3px;
+    line-height: 16px;
+}
+
+.menu ul li a{
+    margin: 0 0 0 30px;
+    padding: 30px 10px 5px 0px;
+    color: var(--Negrito);
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*============ BOTÓN HAMBURGUESA ============*/
+/* ESTATICO HAMBURGUESA */
+
+#hamburger {
+    padding: 25px 0px 20px 20px;
+    position: absolute;
+}
+
+#hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger {
+    min-height: 30px;
+    max-width: 50px;
+    margin-right: 60px;
+}
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    background-color: var(--MarronTitulosyTexto);
+    position: absolute;
+    width: 30px;
+    height: 3.7px;
+    border-radius: 25px;
+    content: '';
+    transition-timing-function: ease;
+    transition-duration: .3s;
+    transition-property: transform,opacity;
+}
+.hamburger-inner:before {
+    top: 10px;
+}
+.hamburger-inner:after {
+    top: 20px;
+}
+
+/* CONVERSION A CRUZ*/
+
+.hamburger.open .hamburger-inner {
+    transform: translate3d(0, 9px, 0) rotate(45deg);
+}
+.hamburger.open .hamburger-inner:after {
+    display: none;
+}
+.hamburger.open .hamburger-inner:before {
+    transform: translate3d(0, -9px, 0) rotate(90deg);
+}
+
+/*======================================= SECCIONES =======================================*/
+
+.secciones .div-imagen {
+    overflow: hidden;
+    margin: 15px auto 20px;
+    height: 150px;
+}
+
+.secciones .div-contenido{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* SOBRE MI */
+
+.secciones .imagen-sobre-mi {
+    background: url(../recursos/imagenes/sobremi-background.png) no-repeat center;
+}
+
+/* NUTRICION */
+
+.secciones .imagen-nutricion {
+    background: url(../recursos/imagenes/nutricion-background.jpg) no-repeat center;
+}
+
+.cinco-pilares {
+    margin: 10px auto 30px;
+}
+
+.cinco-pilares .titulo-5-pilares {
+    font-family: "GothamLight";
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--Negrito);
+    background-color: var(--Clarito);
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.slider {
+    background-color: var(--BackRosita);
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    position: relative;
+}
+
+.slider span{
+    font-family: "elephant";
+    font-size: 65px;
+    line-height: 85px;
+    margin: 0 auto;
+}
+
+.slider p{
+    font-family: "GothamLight";
+    font-size: 15px;
+    line-height: 16px;
+    margin: 0 auto;
+}
+
+#slide-1, #slide-2, #slide-3, #slide-4, #slide-5 {
+    padding: 30px 17px;
+    width: 75%;
+    margin: 0 auto;
+    height: 260px;
+}
+
+#slide-5 {
+    width: 93%;
+}
+
+#slide-2, #slide-3, #slide-4, #slide-5 {
+    display: none;
+}
+
+#flecha-izquierda-blanca, #flecha-derecha-blanca {
+    position: absolute;
+}
+
+#flecha-izquierda-blanca{
+    top: 40%;
+    left: 5px;
+}
+
+#flecha-derecha-blanca{
+    top: 40%;
+    right: 5px;
+}
+
+#plato-equilibrado {
+    width: 90%;
+    margin: 20px auto 10px;
+    text-align: center;
+}
+
+.consulta-nutricional {
+    background-color: var(--TierraBotones);
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto 50px;
+    padding: 30px;
+}
+
+.consulta-nutricional p {
+    font-family: "GothamLight";
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 auto;
+}
+
+.consulta-nutricional .beneficios-consulta {
+    width: 70%;
+    margin: 40px auto 30px;
+}
+
+.consulta-nutricional .beneficios-consulta img{
+    width: 60%;
+}
+
+/* TALLERES Y CURSOS */
+
+.secciones .imagen-talleres-y-cursos {
+    background: url(../recursos/imagenes/talleresycursos-background.jpg) no-repeat center;
+}
+
+.talleres {
+    display: flex;
+    text-align: center;
+    position: relative;
+    margin: 10px auto 20px;
+}
+
+.talleres img {
+    width: 100%;
+}
+
+.talleres h3 {
+    font-family: "GothamLight";
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--MarronTitulosyTexto);
+}
+
+.talleres p {
+    font-family: "GothamLight";
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--Negrito);
+    margin: 10px 0 15px;
+}
+
+#taller-1, #taller-2, #taller-3, #taller-4, #taller-5 {
+    width: 85%;
+    height: 370px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 1px 1px #cacaca;
+}
+
+#taller-1 div, #taller-2 div, #taller-3 div, #taller-4 div, #taller-5 div {
+    padding: 10px 15px;
+}
+
+#taller-2, #taller-3, #taller-4, #taller-5 {
+    display: none;
+}
+
+#flecha-izquierda-taller img, #flecha-derecha-taller img {
+    width: 25px;
+    height: 25px;
+}
+
+#flecha-izquierda-taller, #flecha-derecha-taller {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+#flecha-izquierda-taller {
+    top: 40%;
+    left: -10px;
+}
+
+#flecha-derecha-taller {
+    top: 40%;
+    right: -10px;
+}
+
+.antropometria {
+    background-color: var(--Clarito);
+    padding: 40px 0 30px;
+}
+
+.antropometria div:nth-of-type(1), .antropometria div:nth-of-type(3) {
+    width: 83%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.antropometria h2{
+    font-family: "elephant";
+    font-size: 30px;
+    line-height: 33px;
+    color: var(--MarronTitulosyTexto);
+    margin: 0 0 30px;
+}
+
+.antropometria .imagen-antropometria {
+    background: url(../recursos/imagenes/antropometria.png) no-repeat center;
+    height: 371px;
+}
+
+/* CATERING */
+
+.secciones .imagen-catering {
+    background: url(../recursos/imagenes/catering-background.jpg) no-repeat center;
+}
+
+.secciones .imagen-catering2 {
+    background: url(../recursos/imagenes/catering-background2.png) no-repeat left;
+    height: 277px;
+}
+
+.grid-container {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.grid-item {
+    width: 90px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+/*===================== SOBRE MI DEL INICIO =====================*/
+
+.sobre-mi{
+    background-color: var(--BackRosita);
+}
+
+.sobre-mi div{
+    margin: 20px auto;
+    padding: 20px 0 40px;
+    width: 75%;
+    text-align: center;
+}
+
+.sobre-mi p:nth-of-type(1) {
+    margin: 10px 0;
+    font-family: "elephant";
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--MarronTitulosyTexto);
+}
+
+.sobre-mi p:nth-of-type(2) {
+    margin-bottom: 20px;
+    font-family: "GothamBold";
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.botones {
+    font-family: "GothamLight";
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background-color: var(--TierraBotones);
+    border: none;
+    padding: 7px 40px;
+    border-radius: 40px;
+}
+
+.botones:hover {
+    cursor: pointer;
+    background-color: var(--TierraBotonesHover);
+}
+
+/*===================== NUTRICION DEL INICIO =====================*/
+
+.nutricion {
+    width: 75%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px 0 40px;
+}
+
+.parrafo-metodo {
+    font-family: "GothamLight";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 3px;
+    color: var(--MarronTitulosyTexto);
+}
+
+.titulo-mayuscula {
+    font-family: "elephant";
+    font-size: 35px;
+    line-height: 45px;
+    color: var(--MarronTitulosyTexto)
+}
+
+.parrafos {
+    font-family: "GothamLight";
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--Negrito);
+    margin: 20px 0 25px;
+}
+
+/*===================== TALLERES Y CURSOS DEL INICIO =====================*/
+
+.talleres-y-cursos {
+    background-color: var(--Clarito);
+    padding: 40px 0 40px;
+}
+
+.talleres-y-cursos div:first-of-type {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulosH2 {
+    font-family: "elephant";
+    font-size: 35px;
+    line-height: 35px;
+    color: var(--MarronTitulosyTexto);
+}
+
+.talleres-y-cursos h2 span{
+    display: block;
+}
+
+.talleres-y-cursos div:nth-of-type(2) {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.talleres-y-cursos img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*===================== CATERING DEL INICIO =====================*/
+
+.catering {
+    width: 85%;
+    margin: 0 auto;
+    padding: 40px 0 40px;
+    text-align: center;
+}
+
+/*===================== CONSULTAS ONLINE DEL INICIO =====================*/
+
+.consultas-online {
+    background: url(../recursos/imagenes/cherrysBackground.png) no-repeat;
+    background-size: cover;
+}
+
+.consultas-online .div-consultas {
+    width: 90%;
+    background-color: var(--BackRosita);
+    opacity: 0.93;
+    margin: 0 auto;
+    padding: 20px 3px 10px;
+    text-align: center;
+}
+
+.consultas-online .parrafo-cita {
+    font-family: "GothamMedium";
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 3px;
+    color: var(--MarronTitulosyTexto);
+    margin: 10px auto 20px; 
+    padding: 5px 10px 10px 10px;
+    width: 85%;
+    border-bottom: 1px solid var(--MarronTitulosyTexto);
+}
+
+.consultas-online .div-parrafos {
+    display: flex;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.div-parrafos span {
+    font-family: "GothamMedium";
+    font-weight: 1000;
+}
+
+#flecha-izquierda img, #flecha-derecha img {
+    width: 25px;
+    height: 25px;
+}
+
+#flecha-izquierda, #flecha-derecha {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+#flecha-izquierda{
+    top: 40%;
+    left: -20px;
+}
+
+#flecha-derecha{
+    top: 40%;
+    right: -20px;
+}
+
+#parrafo-1, #parrafo-2, #parrafo-3 {
+    font-family: "GothamLight";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    color: var(--Negrito);
+    margin: 0px auto 20px; 
+    padding: 10px;
+    width: 100%;
+    height: 220px;
+    overflow: auto;
+}
+
+#parrafo-2, #parrafo-3 {
+    display: none;
+}
+
+/*===================== FOOTER =====================*/
+
+footer {
+    background-color: var(--Negrito);
+}
+
+footer div:nth-of-type(1){
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 0 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo-name-footer a{
+    font-family: "elephant";
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+#logo-name-footer a p:nth-child(2){
+    font-family: "GothamLight";
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+#logo-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#div-lista-footer {
+    border-left: 1px solid #ffffff;
+}
+
+#div-lista-footer ul li{
+    list-style: none;
+    padding: 0px 7px 7px 15px;
+    margin-top: 10px;
+    font-family: "GothamLight";
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 15px;
+    letter-spacing: 3px;
+}
+
+#div-lista-footer ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}

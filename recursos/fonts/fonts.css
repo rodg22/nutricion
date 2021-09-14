@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'elephant';
+    src: url('Elephant-PersonalUse.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url('GothamBold.ttf');
+    font-weight: none;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamBoldItalic';
+    src: url('GothamBoldItalic.ttf');
+    font-weight: none;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamLight';
+    src: url('GothamLight.ttf');
+    font-weight: none;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamLightItalic';
+    src: url('GothamLightItalic.ttf');
+    font-weight: none;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('GothamMedium.ttf');
+    font-weight: none;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamMediumItalic';
+    src: url('GothamMediumItalic.ttf');
+    font-weight: none;
+    font-style: normal;
+}
