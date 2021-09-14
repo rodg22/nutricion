@@ -356,12 +356,12 @@ header {
 }
 
 .grid-container {
-    margin: 0 auto;
+    margin: 10px auto 40px;
     padding: 5px;
 }
 
 .grid-item {
-    width: 90px;
+    width: 100px;
     object-fit: cover;
     margin-bottom: 5px;
 }
