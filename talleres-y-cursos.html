@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="recursos/fonts/fonts.css">
         <link rel="stylesheet" href="css/320.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="css/swiper.min.css"/>
         <!-- <link rel="stylesheet" href="css/768.css" media="(min-width: 768px)">
         <link rel="stylesheet" href="css/1024.css" media="(min-width: 1024px)"> -->
         <title>Mariana Viola | Nutricionista</title>
@@ -38,38 +40,38 @@
                 <div class="div-contenido">
                     <h2 class="titulosH2">Talleres y cursos</h2>
                     <p class="parrafos">Talleres y cursos presenciales y online sobre nutrición, alimentación, cocina saludable, cocina para niños y embarazadas, patologías y trastornos, etc.</p>
-                    <div class="talleres">
-                        <div id="flecha-izquierda-taller"><img src="recursos/iconos/izquierda.svg" alt="Flecha izquierda"></div>
-                        <div class="taller-numero">
-                            <div class="taller" id="taller-1">
+                    <!-- Swiper -->
+                    <div class="talleres swiper mySwiper">
+                        <div class="swiper-wrapper taller-numero">
+                            <div class="swiper-slide taller" id="taller-1">
                                 <img src="recursos/imagenes/taller-1.jpg" alt="Primer taller">
                                 <div>
                                     <h3>Taller de Batch Cooking</h3>
                                     <p class="parrafos">Aprendé a preparar tus comidas para toda la semana en tan solo 1 tarde!</p>
                                 </div>
                             </div>
-                            <div class="taller" id="taller-2">
+                            <div class="swiper-slide taller" id="taller-2">
                                 <img src="recursos/imagenes/taller-2.jpg" alt="Segundo taller">
                                 <div>
                                     <h3>Taller de Desayunos Saludables</h3>
                                     <p class="parrafos">Las recetas más deliciosas, fáciles y completas para comenzar el día con mucha energía.</p>
                                 </div>
                             </div>
-                            <div class="taller" id="taller-3">
+                            <div class="swiper-slide taller" id="taller-3">
                                 <img src="recursos/imagenes/taller-3.jpg" alt="Tercer taller">
                                 <div>
                                     <h3>Lectura de rotulados nutricionales</h3>
                                     <p class="parrafos">Comprender y evaluar la composición de nuestros alimentos.</p>
                                 </div>
                             </div>
-                            <div class="taller" id="taller-4">
+                            <div class="swiper-slide taller" id="taller-4">
                                 <img src="recursos/imagenes/taller-4.jpg" alt="Cuarto taller">
                                 <div>
                                     <h3>Compras saludables y organización de la cocina</h3>
                                     <p class="parrafos">Herramientas útiles para la compra y la organización.</p>
                                 </div>
                             </div>
-                            <div class="taller" id="taller-5">
+                            <div class="swiper-slide taller" id="taller-5">
                                 <img src="recursos/imagenes/taller-5.jpg" alt="Quinto taller">
                                 <div>
                                     <h3>Taller de Alimentos y Emociones</h3>
@@ -77,7 +79,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="flecha-derecha-taller"><img src="recursos/iconos/derecha.svg" alt="Flecha derecha"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -121,5 +125,9 @@
         </footer>
         <script src="js/jquery.js"></script>
         <script src="js/javascript.js"></script>
+        <!-- Swiper JS -->
+        <script src="js/swiper.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script src="js/iniciarSwiperConLoop.js"></script>
     </body>
 </html>

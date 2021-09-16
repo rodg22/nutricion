@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="recursos/fonts/fonts.css">
         <link rel="stylesheet" href="css/320.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="css/swiper.min.css"/>
         <!-- <link rel="stylesheet" href="css/768.css" media="(min-width: 768px)">
         <link rel="stylesheet" href="css/1024.css" media="(min-width: 1024px)"> -->
         <title>Mariana Viola | Nutricionista</title>
@@ -44,31 +46,33 @@
                 </div>
                 <div class="cinco-pilares">
                     <h3 class="titulo-5-pilares">5 PILARES DE ESTE MÉTODO</h3>
-                    <div class="slider">
-                        <div id="flecha-izquierda-blanca"><img src="recursos/iconos/izquierda-blanca.svg" alt="Flecha izquierda"></div>
-                        <div class="sliders">
-                            <div id="slide-1">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper slider">
+                        <div class="swiper-wrapper sliders">
+                            <div class="swiper-slide" id="slide-1">
                                 <span>01</span>
                                 <p>Crear un ambiente seguro: no tener al alcance de la mano aquellos alimentos que no se  pueden controlar.</p>
                             </div>
-                            <div id="slide-2">
+                            <div class="swiper-slide" id="slide-2">
                                 <span>02</span>
                                 <p>Hacer 4 comidas: las deudas de hambre se pagan con comida.</p>
                             </div>
-                            <div id="slide-3">
+                            <div class="swiper-slide" id="slide-3">
                                 <span>03</span>
                                 <p>Servir todos los alimentos en 1 plato y jamás comer directo del envase.</p>
                             </div>
-                            <div id="slide-4">
+                            <div class="swiper-slide" id="slide-4">
                                 <span>04</span>
                                 <p>Respetar la cantidad de macro y micronutrientes, variando en alimentos que provean de los mismos. Hidratos de Carbono, Proteínas y Lípidos en cantidades necesarias, sin restricciones.</p>
                             </div>
-                            <div id="slide-5">
+                            <div class="swiper-slide" id="slide-5">
                                 <span>05</span>
                                 <p>La porción justa de placer: es válido incorporar todos los días un alimento que es considerado “poco saludable” pero que se desea, como por ejemplo CHOCOLATE. Se enseñará a respetar porciones y cantidades, sin renunciar al placer de la comida.</p>
                             </div>
                         </div>
-                        <div id="flecha-derecha-blanca"><img src="recursos/iconos/derecha-blanca.svg" alt="Flecha derecha"></div>
+                        <div class="swiper-button-next" style="color: #ffffff"></div>
+                        <div class="swiper-button-prev" style="color: #ffffff"></div>
+                        <div class="swiper-pagination" id="paginador-blanco"></div>
                     </div>
                 </div>
                 <div class="div-contenido">
@@ -104,14 +108,18 @@
                 <div class="div-consultas">
                     <h2 class="titulosH2">Consultas online</span></h2>
                     <p class="parrafo-cita">Pide cita para comenzar tu camino hacia la buena salud.</p>
-                    <div class="div-parrafos">
-                        <div id="flecha-izquierda"><img src="recursos/iconos/izquierda.svg" alt="Flecha izquierda"></div>
-                        <p id="parrafo-1">En nuestro primer encuentro por videoconferencia hablaremos sobre tu día a día, tus hábitos, tu alimentación y tus objetivos. Con toda esta información armaremos un <span>Plan Nutricional Personalizado</span> “piloto” que tendrás que seguir por las próximas 2 semanas. Junto con este plan, también te llevarás una guía y un recetario con fotos.</p>
-                        <p id="parrafo-2">Pasado ese tiempo, realizaremos la segunda consulta para evaluar resultados y cambiar lo necesario para <span>adaptarlo 100% a ti</span>.
-                        Además, iremos abarcando todo tipo de cuestiones que puedan <span>mejorar tu calidad de vida y tu relación con la comida</span>, como por ejemplo la realización de actividad física, los picoteos, la imagen corporal y los miedos a ciertos alimentos.</p>
-                        <p id="parrafo-3">Los seguimientos se pueden realizar cada 2 semanas o cada mes, según sea necesario.
-                        De todas maneras, <span>nunca perderemos el contacto</span>. Podrás escribirme siempre que lo necesites y yo te ayudaré con las compras y la lectura de las etiquetas, recetas para incorporar nuevos alimentos o para variar con aquellos que consumimos con frecuencia.</p>
-                        <div id="flecha-derecha"><img src="recursos/iconos/derecha.svg" alt="Flecha derecha"></div>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper div-parrafos">
+                            <div class="swiper-slide"><p id="parrafo-1">En nuestro primer encuentro por videoconferencia hablaremos sobre tu día a día, tus hábitos, tu alimentación y tus objetivos. Con toda esta información armaremos un <span>Plan Nutricional Personalizado</span> “piloto” que tendrás que seguir por las próximas 2 semanas. Junto con este plan, también te llevarás una guía y un recetario con fotos.</p></div>
+                            <div class="swiper-slide"><p id="parrafo-2">Pasado ese tiempo, realizaremos la segunda consulta para evaluar resultados y cambiar lo necesario para <span>adaptarlo 100% a ti</span>.
+                            Además, iremos abarcando todo tipo de cuestiones que puedan <span>mejorar tu calidad de vida y tu relación con la comida</span>, como por ejemplo la realización de actividad física, los picoteos, la imagen corporal y los miedos a ciertos alimentos.</p></div>
+                            <div class="swiper-slide"><p id="parrafo-3">Los seguimientos se pueden realizar cada 2 semanas o cada mes, según sea necesario.
+                            De todas maneras, <span>nunca perderemos el contacto</span>. Podrás escribirme siempre que lo necesites y yo te ayudaré con las compras y la lectura de las etiquetas, recetas para incorporar nuevos alimentos o para variar con aquellos que consumimos con frecuencia.</p></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -144,5 +152,9 @@
         </footer>
         <script src="js/jquery.js"></script>
         <script src="js/javascript.js"></script>
+        <!-- Swiper JS -->
+        <script src="js/swiper.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script src="js/iniciarSwiperSinLoop.js"></script>
     </body>
 </html>

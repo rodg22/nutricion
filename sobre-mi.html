@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="recursos/fonts/fonts.css">
         <link rel="stylesheet" href="css/320.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="css/swiper.min.css"/>
         <!-- <link rel="stylesheet" href="css/768.css" media="(min-width: 768px)">
         <link rel="stylesheet" href="css/1024.css" media="(min-width: 1024px)"> -->
         <title>Mariana Viola | Nutricionista</title>
@@ -46,14 +48,18 @@
                 <div class="div-consultas">
                     <h2 class="titulosH2">Consultas online</span></h2>
                     <p class="parrafo-cita">Pide cita para comenzar tu camino hacia la buena salud.</p>
-                    <div class="div-parrafos">
-                        <div id="flecha-izquierda"><img src="recursos/iconos/izquierda.svg" alt="Flecha izquierda"></div>
-                        <p id="parrafo-1">En nuestro primer encuentro por videoconferencia hablaremos sobre tu día a día, tus hábitos, tu alimentación y tus objetivos. Con toda esta información armaremos un <span>Plan Nutricional Personalizado</span> “piloto” que tendrás que seguir por las próximas 2 semanas. Junto con este plan, también te llevarás una guía y un recetario con fotos.</p>
-                        <p id="parrafo-2">Pasado ese tiempo, realizaremos la segunda consulta para evaluar resultados y cambiar lo necesario para <span>adaptarlo 100% a ti</span>.
-                        Además, iremos abarcando todo tipo de cuestiones que puedan <span>mejorar tu calidad de vida y tu relación con la comida</span>, como por ejemplo la realización de actividad física, los picoteos, la imagen corporal y los miedos a ciertos alimentos.</p>
-                        <p id="parrafo-3">Los seguimientos se pueden realizar cada 2 semanas o cada mes, según sea necesario.
-                        De todas maneras, <span>nunca perderemos el contacto</span>. Podrás escribirme siempre que lo necesites y yo te ayudaré con las compras y la lectura de las etiquetas, recetas para incorporar nuevos alimentos o para variar con aquellos que consumimos con frecuencia.</p>
-                        <div id="flecha-derecha"><img src="recursos/iconos/derecha.svg" alt="Flecha derecha"></div>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper div-parrafos">
+                            <div class="swiper-slide"><p id="parrafo-1">En nuestro primer encuentro por videoconferencia hablaremos sobre tu día a día, tus hábitos, tu alimentación y tus objetivos. Con toda esta información armaremos un <span>Plan Nutricional Personalizado</span> “piloto” que tendrás que seguir por las próximas 2 semanas. Junto con este plan, también te llevarás una guía y un recetario con fotos.</p></div>
+                            <div class="swiper-slide"><p id="parrafo-2">Pasado ese tiempo, realizaremos la segunda consulta para evaluar resultados y cambiar lo necesario para <span>adaptarlo 100% a ti</span>.
+                            Además, iremos abarcando todo tipo de cuestiones que puedan <span>mejorar tu calidad de vida y tu relación con la comida</span>, como por ejemplo la realización de actividad física, los picoteos, la imagen corporal y los miedos a ciertos alimentos.</p></div>
+                            <div class="swiper-slide"><p id="parrafo-3">Los seguimientos se pueden realizar cada 2 semanas o cada mes, según sea necesario.
+                            De todas maneras, <span>nunca perderemos el contacto</span>. Podrás escribirme siempre que lo necesites y yo te ayudaré con las compras y la lectura de las etiquetas, recetas para incorporar nuevos alimentos o para variar con aquellos que consumimos con frecuencia.</p></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -86,5 +92,9 @@
         </footer>
         <script src="js/jquery.js"></script>
         <script src="js/javascript.js"></script>
+        <!-- Swiper JS -->
+        <script src="js/swiper.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script src="js/iniciarSwiperSinLoop.js"></script>
     </body>
 </html>

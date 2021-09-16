@@ -204,24 +204,6 @@ header {
     width: 93%;
 }
 
-#slide-2, #slide-3, #slide-4, #slide-5 {
-    display: none;
-}
-
-#flecha-izquierda-blanca, #flecha-derecha-blanca {
-    position: absolute;
-}
-
-#flecha-izquierda-blanca{
-    top: 40%;
-    left: 5px;
-}
-
-#flecha-derecha-blanca{
-    top: 40%;
-    right: 5px;
-}
-
 #plato-equilibrado {
     width: 90%;
     margin: 20px auto 10px;
@@ -258,13 +240,6 @@ header {
     background: url(../recursos/imagenes/talleresycursos-background.jpg) no-repeat center;
 }
 
-.talleres {
-    display: flex;
-    text-align: center;
-    position: relative;
-    margin: 10px auto 20px;
-}
-
 .talleres img {
     width: 100%;
 }
@@ -288,36 +263,6 @@ header {
     width: 85%;
     height: 370px;
     margin: 0 auto;
-    box-shadow: 1px 1px 1px 1px #cacaca;
-}
-
-#taller-1 div, #taller-2 div, #taller-3 div, #taller-4 div, #taller-5 div {
-    padding: 10px 15px;
-}
-
-#taller-2, #taller-3, #taller-4, #taller-5 {
-    display: none;
-}
-
-#flecha-izquierda-taller img, #flecha-derecha-taller img {
-    width: 25px;
-    height: 25px;
-}
-
-#flecha-izquierda-taller, #flecha-derecha-taller {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-}
-
-#flecha-izquierda-taller {
-    top: 40%;
-    left: -10px;
-}
-
-#flecha-derecha-taller {
-    top: 40%;
-    right: -10px;
 }
 
 .antropometria {
@@ -515,38 +460,9 @@ header {
     border-bottom: 1px solid var(--MarronTitulosyTexto);
 }
 
-.consultas-online .div-parrafos {
-    display: flex;
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    z-index: 1;
-}
-
 .div-parrafos span {
     font-family: "GothamMedium";
     font-weight: 1000;
-}
-
-#flecha-izquierda img, #flecha-derecha img {
-    width: 25px;
-    height: 25px;
-}
-
-#flecha-izquierda, #flecha-derecha {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-}
-
-#flecha-izquierda{
-    top: 40%;
-    left: -20px;
-}
-
-#flecha-derecha{
-    top: 40%;
-    right: -20px;
 }
 
 #parrafo-1, #parrafo-2, #parrafo-3 {
@@ -557,13 +473,9 @@ header {
     color: var(--Negrito);
     margin: 0px auto 20px; 
     padding: 10px;
-    width: 100%;
+    width: 90%;
     height: 220px;
     overflow: auto;
-}
-
-#parrafo-2, #parrafo-3 {
-    display: none;
 }
 
 /*===================== FOOTER =====================*/

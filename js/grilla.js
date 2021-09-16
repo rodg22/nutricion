@@ -1,8 +1,10 @@
 let elem = document.querySelector(".grid-container");
-let msnry = new Masonry(elem, {
-// options
-itemSelector: ".grid-item",
-columnWidth: 100,
-gutter: 5,
-isFitWidth: true
-});
+imagesLoaded(elem, () => {
+    let msnry = new Masonry(elem, {
+    // options
+    itemSelector: ".grid-item",
+    columnWidth: 100,
+    gutter: 5,
+    isFitWidth: true
+    });
+})
