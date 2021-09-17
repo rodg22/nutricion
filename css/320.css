@@ -15,10 +15,6 @@
     --Clarito: #F2EAE7;
 }
 
-/*========= BODY =========*/
-
-
-
 /*========= HEADER =========*/
 
 header {
@@ -279,6 +275,7 @@ header {
 .antropometria h2{
     font-family: "elephant";
     font-size: 30px;
+    font-weight: 1;
     line-height: 33px;
     color: var(--MarronTitulosyTexto);
     margin: 0 0 30px;
@@ -407,6 +404,7 @@ header {
     font-size: 35px;
     line-height: 35px;
     color: var(--MarronTitulosyTexto);
+    font-weight: 1;
 }
 
 .talleres-y-cursos h2 span{
