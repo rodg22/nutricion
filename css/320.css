@@ -373,6 +373,7 @@ header {
 .titulo-mayuscula {
     font-family: "elephant";
     font-size: 35px;
+    font-weight: 1;
     line-height: 45px;
     color: var(--MarronTitulosyTexto)
 }
