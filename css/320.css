@@ -182,22 +182,22 @@ header {
     margin: 0 auto;
 }
 
-.slider p{
+.sliders p{
     font-family: "GothamLight";
     font-size: 15px;
     line-height: 16px;
     margin: 0 auto;
+    width: 75%;
 }
 
 #slide-1, #slide-2, #slide-3, #slide-4, #slide-5 {
     padding: 30px 17px;
-    width: 75%;
     margin: 0 auto;
-    height: 260px;
+    height: 280px;
 }
 
-#slide-5 {
-    width: 93%;
+#slide-4 p, #slide-5 p{
+    width: 92%;
 }
 
 #plato-equilibrado {
@@ -237,7 +237,8 @@ header {
 }
 
 .talleres img {
-    width: 100%;
+    width: 230px;
+    margin: 0 auto;
 }
 
 .talleres h3 {
@@ -245,6 +246,8 @@ header {
     font-size: 17px;
     line-height: 20px;
     color: var(--MarronTitulosyTexto);
+    margin: 10px auto 15px;
+    width: 95%;
 }
 
 .talleres p {
@@ -252,13 +255,21 @@ header {
     font-size: 14px;
     line-height: 16px;
     color: var(--Negrito);
-    margin: 10px 0 15px;
+    margin: 10px auto 15px;
+    padding-bottom: 15px;
+    width: 95%;
+}
+
+.taller-contenedor {
+    box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    height: 342px;
 }
 
 #taller-1, #taller-2, #taller-3, #taller-4, #taller-5 {
-    width: 85%;
-    height: 370px;
+    height: 400px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .antropometria {
