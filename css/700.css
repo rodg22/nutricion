@@ -8,6 +8,7 @@
 
 :root {
     --Negrito: #707070;
+    --NegritoHover: #535252;
     --BackRosita: #D9C2B9;
     --MarronTitulosyTexto: #975130;
     --TierraBotones: #B27C65;
@@ -18,20 +19,26 @@
 /*========= HEADER =========*/
 
 header {
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
     position: sticky;
     top: 0px;
     background-color: rgba(250, 250, 250, 0.95);
     z-index: 30;
+    margin: 0 auto;
+    border: 1px solid rgba(250, 250, 250, 0.95);
 }
 
 #logo-name {
-    padding: 25px 0 0 20px;
+    order: -1;
 }
 
 #logo-name a{
     font-family: "elephant";
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 18px;
     color: var(--MarronTitulosyTexto);
     text-decoration: none;
     text-align: center;
@@ -47,141 +54,165 @@ header {
 /*========= MENU =========*/
 
 .menu {
-    display: none;
-    text-align: left;
-    position: absolute;
-    left: 0px;
-    bottom: calc(-100vh + 65.1px);
-    background-color: rgba(250, 250, 250, 0.95);
-    width: 100%;
-    height: calc(100vh - 65px);
+    text-align: center;
 }
 
 .menu ul {
     list-style: none;
     padding: 0;
+    display: flex;
 }
 
 .menu ul li{
     font-family: "GothamLight";
     font-weight: bold;
-    font-size: 15px;
-    letter-spacing: 3px;
-    line-height: 16px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 11px;
+    margin: 0 6px;
 }
 
 .menu ul li a{
-    margin: 0 0 0 30px;
-    padding: 30px 10px 5px 0px;
     color: var(--Negrito);
     text-decoration: none;
     display: inline-block;
+    padding: 5px 3px;
+}
+
+.menu ul li a:hover{
+    color: #000000;
+    font-weight: 1000;
     cursor: pointer;
 }
 
 /*============ BOTÓN HAMBURGUESA ============*/
-/* ESTATICO HAMBURGUESA */
 
 #hamburger {
-    padding: 25px 0px 20px 20px;
-    position: absolute;
-}
-
-#hamburger:hover {
-    cursor: pointer;
-}
-
-.hamburger {
-    min-height: 30px;
-    max-width: 50px;
-    margin-right: 60px;
-}
-.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
-    background-color: var(--MarronTitulosyTexto);
-    position: absolute;
-    width: 30px;
-    height: 3.7px;
-    border-radius: 25px;
-    content: '';
-    transition-timing-function: ease;
-    transition-duration: .3s;
-    transition-property: transform,opacity;
-}
-.hamburger-inner:before {
-    top: 10px;
-}
-.hamburger-inner:after {
-    top: 20px;
-}
-
-/* CONVERSION A CRUZ*/
-
-.hamburger.open .hamburger-inner {
-    transform: translate3d(0, 9px, 0) rotate(45deg);
-}
-.hamburger.open .hamburger-inner:after {
     display: none;
-}
-.hamburger.open .hamburger-inner:before {
-    transform: translate3d(0, -9px, 0) rotate(90deg);
 }
 
 /*======================================= SECCIONES =======================================*/
-
-.secciones .div-imagen {
-    overflow: hidden;
-    margin: 15px auto 20px;
-    height: 150px;
-}
-
-.secciones .div-contenido{
-    width: 85%;
-    margin: 0 auto;
-    text-align: center;
-}
 
 /* SOBRE MI */
 
 .secciones .imagen-sobre-mi {
     background: url(../recursos/imagenes/sobremi-background.png) no-repeat center;
+    height: 150px;
+    margin: 0 auto 10%;
 }
+
+.flex-container-sobre-mi {
+    display: flex;
+    position: relative;
+    margin: 40px 0 0;
+}
+
+.sobre-mi-foto {
+    background: url(../recursos/imagenes/sobremi.jpg) no-repeat center;
+    background-size: contain;
+    height: 449px;
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    right: 26%;
+}
+
+.container-titulo {
+    background: #ffffff;
+    padding: 0 5% 3% 40%;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.parrafos-container {
+    background: var(--TierraBotones);
+    padding: 2% 5% 5% 40%;
+    width: 85%;
+    margin: 0 auto 10%;
+}
+
+.container-titulo{
+    background: #ffffff;
+}
+
+.sobre-mi-container .parrafos{
+    color: #ffffff;
+}
+
 
 /* NUTRICION */
 
 .secciones .imagen-nutricion {
     background: url(../recursos/imagenes/nutricion-background.jpg) no-repeat center;
+    height: 150px;
+    margin: 0 auto 10%;
+}
+
+.no-dieta {
+    width: 60%;
+    margin-left: 15%;
+    text-align: left;
 }
 
 .cita-nutricion {
-    display: none;
+    background-color: var(--TierraBotones);
+    color: #ffffff;
+    width: 90%;
+    padding: 20px 60px 20px 20px;
+    font-family: "GothamLight";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+}
+
+.cita-nutricion p:nth-of-type(1){
+    text-align: center;
+    margin-bottom: 8px;
+    padding-left: 10%;
+}
+
+.cita-nutricion p:nth-of-type(2){
+    text-align: right;
+    margin-bottom: 8px;
+}
+
+.cita-nutricion p:nth-of-type(3){
+    text-align: right;
+    font-size: 13px;
 }
 
 .cinco-pilares {
-    margin: 10px auto 30px;
+    margin: 50px 0 30px 12%;
+    width: 45%;
 }
 
 .cinco-pilares .titulo-5-pilares {
     font-family: "GothamLight";
     font-size: 15px;
     line-height: 20px;
-    color: var(--Negrito);
-    background-color: var(--Clarito);
-    text-align: center;
-    padding: 10px 5px;
+    color: #ffffff;
+    background-color: var(--BackRosita);
+    text-align: left;
+    padding: 20px 8%;
 }
 
 .slider {
     background-color: var(--BackRosita);
     color: #ffffff;
-    text-align: center;
+    text-align: left;
+    padding: 10px;
+}
+
+.sliders .swiper-slide {
     display: flex;
-    position: relative;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
 .slider span{
     font-family: "elephant";
-    font-size: 65px;
-    line-height: 85px;
+    font-size: 45px;
+    line-height: 45px;
     margin: 0 auto;
 }
 
@@ -189,28 +220,51 @@ header {
     font-family: "GothamLight";
     font-size: 15px;
     line-height: 16px;
-    margin: 0 auto;
     width: 75%;
+    align-self: center;
+    padding-left: 10px;
 }
 
-#slide-1, #slide-2, #slide-3, #slide-4, #slide-5 {
-    padding: 30px 17px;
-    margin: 0 auto;
-    height: 280px;
-}
-
-#slide-4 p, #slide-5 p{
-    width: 92%;
+.container-cinco-pilares {
+    position: relative;
 }
 
 .parrafos-side-pilares {
-    display: none;
+    position: absolute;
+    top: 20%;
+    z-index: -1;
+    background-color: var(--Clarito);
+    color: var(--Negrito);
+    padding: 30px 5% 30px 60%;
+}
+
+.parrafos-side-pilares p{
+    margin-bottom: 20px;
+    font-family: "GothamLight";
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.plato-equilibrado-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 50px 0;
 }
 
 #plato-equilibrado {
-    width: 90%;
-    margin: 20px auto 10px;
-    text-align: center;
+    order: -1;
+    position: absolute;
+    top: 0;
+    left: 8%;
+}
+
+.parrafos-plato-equilibrado p:nth-of-type(1){
+    padding: 0 5% 0 55%;
+}
+
+.parrafos-plato-equilibrado p:nth-of-type(2){
+    padding: 4% 5% 0 15%;
 }
 
 .consulta-nutricional {
@@ -221,30 +275,85 @@ header {
     padding: 30px;
 }
 
-.consulta-nutricional p {
+.consulta-nutricional > p {
     font-family: "GothamLight";
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 20px;
+    line-height: 20px;
     margin: 0 auto;
+    width: 80%;
+}
+
+.container-beneficios-consulta {
+    display: flex;
 }
 
 .consulta-nutricional .beneficios-consulta {
     width: 70%;
-    margin: 40px auto 30px;
+    margin: 40px auto 40px;
 }
 
 .consulta-nutricional .beneficios-consulta img{
-    width: 60%;
+    width: 128px;
+    height: 128px;
+}
+
+.consulta-nutricional .beneficios-consulta p{
+    font-family: "GothamLight";
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.parrafos-finales {
+    display: flex;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.parrafos-finales p:nth-of-type(1) {
+    padding: 2% 5% 2% 10%;
+}
+
+.parrafos-finales p:nth-of-type(2) {
+    padding: 2% 10% 2% 5%;
 }
 
 /* TALLERES Y CURSOS */
 
 .secciones .imagen-talleres-y-cursos {
     background: url(../recursos/imagenes/talleresycursos-background.jpg) no-repeat center;
+    height: 150px;
+    margin: 0 auto 10%;
 }
 
+.talleres-intro .titulosH2, .talleres-intro .parrafo-intro {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.talleres-ocultos {
+    display: none;
+}
+
+#taller-numero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.taller {
+    width: 257px;
+}
+
+.taller-contenedor {
+    height: 353px;
+    margin-top: 40px;
+}
+ 
 .talleres img {
-    width: 230px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -255,6 +364,11 @@ header {
     color: var(--MarronTitulosyTexto);
     margin: 10px auto 15px;
     width: 95%;
+    text-align: center;
+}
+
+.talleres h3:nth-of-type(1) {
+    height: 40px;
 }
 
 .talleres p {
@@ -265,27 +379,24 @@ header {
     margin: 10px auto 15px;
     padding-bottom: 15px;
     width: 95%;
+    text-align: center;
 }
 
 .taller-contenedor {
     box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
-    height: 342px;
-}
-
-#taller-1, #taller-2, #taller-3, #taller-4, #taller-5 {
-    height: 400px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.myTaller {
-    display: none;
-}
+} 
 
 .antropometria {
     background-color: var(--Clarito);
-    padding: 40px 0 30px;
+    padding: 50px 0 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.antropometria div:nth-of-type(1) {
+    width: 100%;
 }
 
 .antropometria div:nth-of-type(1), .antropometria div:nth-of-type(3) {
@@ -303,9 +414,18 @@ header {
     margin: 0 0 30px;
 }
 
+.antropometria div:nth-of-type(3) {
+    order: 2;
+    width: 45%;
+    text-align: right;
+}
+
 .antropometria .imagen-antropometria {
     background: url(../recursos/imagenes/antropometria.png) no-repeat center;
     height: 371px;
+    width: 45%;
+    order: 3;
+    margin-right: 3%;
 }
 
 /* CATERING */
@@ -337,15 +457,22 @@ header {
 }
 
 .sobre-mi-div{
-    margin: 20px auto;
-    padding: 20px 0 40px;
-    width: 75%;
-    text-align: center;
+    display: flex;
 }
 
 .sobre-mi-div .sobre-mi-foto-perfil {
-    background: url(../recursos/imagenes/perfil-mobile1.png) no-repeat center;
-    height: 122px;
+    background: url(../recursos/imagenes/sobremi.jpg) no-repeat center;
+    background-size: contain;
+    height: 257px;
+    order: 10;
+    flex: 40%;
+}
+
+.sobre-mi-cita {
+    text-align: right;
+    flex: 60%;
+    padding-left: 12%;
+    margin-top: 3%;
 }
 
 .sobre-mi p:nth-of-type(1) {
@@ -365,12 +492,12 @@ header {
 
 .botones {
     font-family: "GothamLight";
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 3px;
     color: #ffffff;
     background-color: var(--TierraBotones);
     border: none;
-    padding: 10px 50px;
+    padding: 8px 50px;
     border-radius: 40px;
 }
 
@@ -383,7 +510,7 @@ header {
 
 .nutricion {
     width: 75%;
-    margin: 20px auto;
+    margin: 50px auto;
     text-align: center;
     padding: 20px 0 40px;
 }
@@ -391,7 +518,7 @@ header {
 .parrafo-metodo {
     font-family: "GothamLight";
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 28px;
     letter-spacing: 3px;
     color: var(--MarronTitulosyTexto);
@@ -408,7 +535,7 @@ header {
 .parrafos {
     font-family: "GothamLight";
     font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 20px;
     color: var(--Negrito);
     margin: 20px 0 25px;
@@ -419,12 +546,15 @@ header {
 .talleres-y-cursos {
     background-color: var(--Clarito);
     padding: 40px 0 40px;
+    display: flex;
+    position: relative;
 }
 
-.talleres-y-cursos .intro {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
+.intro {
+    width: 70%;
+    text-align: right;
+    flex: 60%;
+    padding: 0 15px;
 }
 
 .titulosH2 {
@@ -435,28 +565,45 @@ header {
     font-weight: 1;
 }
 
-.talleres-y-cursos h2 span{
-    display: block;
+.intro .titulosH2 {
+    width: 90%;
+    margin: 0 auto 20px;
+}
+
+.intro .parrafos {
+    width: 90%;
+    text-align: right;
+    margin: 20px auto;
+    padding-left: 20%;
+}
+
+.flex-item-talleres-foto {
+    width: 100%;
+    order: 5;
+    flex: 40%;
 }
 
 .talleres-y-cursos .talleres-foto{
     background: url(../recursos/imagenes/talleres.png) no-repeat center top;
-    background-size: cover;
+    background-size: contain;
     height: 240px;
     width: 100%;
-    margin-bottom: 30px;
 }
 
 #talleres-boton {
     margin: 0 auto;
     text-align: center;
+    order: 3;
+    position: absolute;
+    top: 70%;
+    left: 30%;
 }
 
 /*===================== CATERING DEL INICIO =====================*/
 
 .catering {
     width: 85%;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 40px 0 40px;
     text-align: center;
 }
@@ -470,7 +617,7 @@ header {
 }
 
 .consultas-online .div-consultas {
-    width: 90%;
+    width: 70%;
     background-color: var(--BackRosita);
     opacity: 0.93;
     margin: 0 auto;
@@ -478,15 +625,19 @@ header {
     text-align: center;
 }
 
+.consultas-online .titulosH2 {
+    margin-top: 30px;
+}
+
 .consultas-online .parrafo-cita {
     font-family: "GothamMedium";
     font-size: 14px;
-    line-height: 15px;
+    line-height: 14px;
     letter-spacing: 3px;
     color: var(--MarronTitulosyTexto);
-    margin: 10px auto 20px; 
+    margin: 10px auto; 
     padding: 5px 10px 10px 10px;
-    width: 85%;
+    width: 70%;
     border-bottom: 1px solid var(--MarronTitulosyTexto);
 }
 
@@ -497,44 +648,71 @@ header {
 
 #parrafo-1, #parrafo-2, #parrafo-3 {
     font-family: "GothamLight";
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
-    line-height: 16px;
+    line-height: 20px;
     color: var(--Negrito);
-    margin: 0px auto 20px; 
+    margin: 15px auto; 
     padding: 10px;
-    width: 90%;
-    height: 220px;
-    overflow: auto;
+    width: 95%;
 }
 
 .contacto {
-    display: none;
+    font-family: "GothamLight";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+    width: 70%;
+    background-color: var(--MarronTitulosyTexto);
+    margin: 0 auto;
+    padding: 20px 3px 20px;
+}
+
+.contacto div{
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contacto img:hover {
+    transform: scale(0.9);
+}
+
+.contacto a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contacto a:nth-of-type(2){
+    margin-left: 5px;
+}
+.contacto a:nth-of-type(2):hover{
+    border-bottom: 1px solid #ffffff;
 }
 
 /*===================== FOOTER =====================*/
 
 footer {
     background-color: var(--Negrito);
+    height: 150px;
     position: relative;
+    display: flex;
 }
 
-footer div:nth-of-type(1){
+#footer-primer-div{
     width: 95%;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     padding: 10px 0 10px;
     display: flex;
     justify-content: space-between;
-}
-
-#logo-name-footer {
-    margin-left: 10%;
+    align-items: center;
 }
 
 #logo-name-footer a{
     font-family: "elephant";
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 18px;
     color: #ffffff;
     text-decoration: none;
     text-align: center;
@@ -548,27 +726,34 @@ footer div:nth-of-type(1){
 
 #div-redes {
     position: absolute;
-    top: 60%;
-    left: 15%;
+    top: 65%;
+    left: 80%;
 }
 
-#div-lista-footer {
-    border-left: 1px solid #ffffff;
+#div-redes img:hover {
+    transform: scale(0.9);
 }
 
+#div-lista-footer ul{
+    display: flex;
+}
 #div-lista-footer ul li{
     list-style: none;
-    padding: 0px 7px 7px 15px;
-    margin-top: 10px;
     font-family: "GothamLight";
-    font-size: 11px;
+    font-size: 10px;
     font-weight: bold;
-    line-height: 15px;
+    line-height: 13px;
     letter-spacing: 3px;
+    padding: 0px 7px 0px;
 }
 
 #div-lista-footer ul li a{
     text-decoration: none;
     color: #ffffff;
+}
+
+#div-lista-footer ul li a:hover{
     cursor: pointer;
+    color: #ffffffbd;
+    font-weight: 1000;
 }

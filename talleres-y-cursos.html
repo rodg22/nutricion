@@ -5,11 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="recursos/fonts/fonts.css">
-        <link rel="stylesheet" href="css/320.css">
+        <link rel="stylesheet" href="css/320.css" media="(max-width: 699.9px)">
         <!-- Link Swiper's CSS -->
-        <link rel="stylesheet" href="css/swiper.min.css"/>
-        <!-- <link rel="stylesheet" href="css/768.css" media="(min-width: 768px)">
-        <link rel="stylesheet" href="css/1024.css" media="(min-width: 1024px)"> -->
+        <link rel="stylesheet" href="css/swiper.min.css" media="(max-width: 699.9px)">
+        <link rel="stylesheet" href="css/700.css" media="(min-width: 700px)">
+        <!-- <link rel="stylesheet" href="css/1024.css" media="(min-width: 1024px)"> -->
         <title>Mariana Viola | Nutricionista</title>
     </head>
     <body>
@@ -37,11 +37,11 @@
         <main>
             <section class="secciones">
                 <div class="div-imagen imagen-talleres-y-cursos"></div>
-                <div class="div-contenido">
+                <div class="div-contenido talleres-intro">
                     <h2 class="titulosH2">Talleres y cursos</h2>
-                    <p class="parrafos">Talleres y cursos presenciales y online sobre nutrición, alimentación, cocina saludable, cocina para niños y embarazadas, patologías y trastornos, etc.</p>
+                    <p class="parrafos parrafo-intro">Talleres y cursos presenciales y online sobre nutrición, alimentación, cocina saludable, cocina para niños y embarazadas, patologías y trastornos, etc.</p>
                     <!-- Swiper -->
-                    <div class="talleres swiper mySwiper">
+                    <div class="talleres swiper mySwiper talleres-ocultos">
                         <div class="swiper-wrapper" id="taller-numero">
                             <div class="swiper-slide taller" id="taller-1">
                                 <div class="taller-contenedor">
@@ -93,6 +93,55 @@
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-pagination"></div>
                     </div>
+                    <div class="talleres myTaller">
+                        <div id="taller-numero">
+                            <div class="taller" id="taller-1">
+                                <div class="taller-contenedor">
+                                    <img src="recursos/imagenes/taller-1.jpg" alt="Primer taller">
+                                    <div>
+                                        <h3>Taller de Batch Cooking</h3>
+                                        <p class="parrafos">Aprendé a preparar tus comidas para toda la semana en tan solo 1 tarde!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="taller" id="taller-2">
+                                <div class="taller-contenedor">
+                                    <img src="recursos/imagenes/taller-2.jpg" alt="Segundo taller">
+                                    <div>
+                                        <h3>Taller de Desayunos Saludables</h3>
+                                        <p class="parrafos">Las recetas más deliciosas, fáciles y completas para comenzar el día con mucha energía.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="taller" id="taller-3">
+                                <div class="taller-contenedor">
+                                    <img src="recursos/imagenes/taller-3.jpg" alt="Tercer taller">
+                                    <div>
+                                        <h3>Lectura de rotulados nutricionales</h3>
+                                        <p class="parrafos">Comprender y evaluar la composición de nuestros alimentos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="taller" id="taller-4">
+                                <div class="taller-contenedor">
+                                    <img src="recursos/imagenes/taller-4.jpg" alt="Cuarto taller">
+                                    <div>
+                                        <h3>Compras saludables y organización de la cocina</h3>
+                                        <p class="parrafos">Herramientas útiles para la compra y la organización.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="taller" id="taller-5">
+                                <div class="taller-contenedor">
+                                    <img src="recursos/imagenes/taller-5.jpg" alt="Quinto taller">
+                                    <div>
+                                        <h3>Taller de Alimentos y Emociones</h3>
+                                        <p class="parrafos">Psiconutrición y mindfulness que nos ayudarán a mejorar la relación con la comida y nuestro cuerpo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="antropometria">
@@ -108,19 +157,17 @@
                 </div>
         </main>
         <footer>
-            <div>
-                <div id="logo-redes">
-                    <div id="logo-name-footer">
-                        <a href="index.html">
-                            <p>Mariana Viola</p>
-                            <p>nutricionista</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="mailto:lic.marianaviola@gmail.com" target="_blank"><img src="recursos/iconos/mail.png" alt="Logo del mail" width="30px"></a>
-                        <a href="https://wa.me/34685346188" target="_blank"><img src="recursos/iconos/whatsapp.png" alt="Logo del whatsapp" width="30px"></a>
-                        <a href="https://www.instagram.com/paltacatering/" target="_blank"><img src="recursos/iconos/instagram.png" alt="Logo del instagram" width="30px"></a>
-                    </div>
+            <div id="footer-primer-div">
+                <div id="logo-name-footer">
+                    <a href="index.html">
+                        <p>Mariana Viola</p>
+                        <p>nutricionista</p>
+                    </a>
+                </div>
+                <div id="div-redes">
+                    <a href="mailto:lic.marianaviola@gmail.com" target="_blank"><img src="recursos/iconos/mail.png" alt="Logo del mail" width="30px"></a>
+                    <a href="https://wa.me/34685346188" target="_blank"><img src="recursos/iconos/whatsapp.png" alt="Logo del whatsapp" width="30px"></a>
+                    <a href="https://www.instagram.com/paltacatering/" target="_blank"><img src="recursos/iconos/instagram.png" alt="Logo del instagram" width="30px"></a>
                 </div>
                 <div id="div-lista-footer">
                     <ul>
