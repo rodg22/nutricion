@@ -22,7 +22,7 @@ header {
     height: 80px;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: sticky;
     top: 0px;
     background-color: rgba(250, 250, 250, 0.95);
@@ -37,8 +37,8 @@ header {
 
 #logo-name a{
     font-family: "elephant";
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 24px;
+    line-height: 24px;
     color: var(--MarronTitulosyTexto);
     text-decoration: none;
     text-align: center;
@@ -47,7 +47,7 @@ header {
 
 #logo-name a p:nth-child(2){
     font-family: "GothamLight";
-    font-size: 10px;
+    font-size: 13px;
     letter-spacing: 4px;
 }
 
@@ -66,10 +66,10 @@ header {
 .menu ul li{
     font-family: "GothamLight";
     font-weight: bold;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 2px;
-    line-height: 11px;
-    margin: 0 6px;
+    line-height: 12px;
+    margin: 0 20px;
 }
 
 .menu ul li a{
@@ -110,11 +110,11 @@ header {
 .sobre-mi-foto {
     background: url(../recursos/imagenes/sobremi.jpg) no-repeat center;
     background-size: contain;
-    height: 449px;
+    height: 568px;
     width: 100%;
     position: absolute;
     top: -20px;
-    right: 26%;
+    right: 22%;
 }
 
 .container-titulo {
@@ -128,7 +128,7 @@ header {
     background: var(--TierraBotones);
     padding: 2% 5% 5% 40%;
     width: 85%;
-    margin: 0 auto 10%;
+    margin: 0 auto 5%;
 }
 
 .container-titulo{
@@ -137,8 +137,8 @@ header {
 
 .sobre-mi-container .parrafos{
     color: #ffffff;
+    line-height: 30px;
 }
-
 
 /* NUTRICION */
 
@@ -158,11 +158,11 @@ header {
     background-color: var(--TierraBotones);
     color: #ffffff;
     width: 90%;
-    padding: 20px 60px 20px 20px;
+    padding: 30px 60px 30px 20px;
     font-family: "GothamLight";
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
-    line-height: 14px;
+    line-height: 18px;
 }
 
 .cita-nutricion p:nth-of-type(1){
@@ -188,8 +188,8 @@ header {
 
 .cinco-pilares .titulo-5-pilares {
     font-family: "GothamLight";
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 17px;
+    line-height: 22px;
     color: #ffffff;
     background-color: var(--BackRosita);
     text-align: left;
@@ -213,20 +213,30 @@ header {
     font-family: "elephant";
     font-size: 45px;
     line-height: 45px;
-    margin: 0 auto;
+    margin: 0 10px;
+}
+
+#slide-1 span{
+    font-family: "elephant";
+    font-size: 45px;
+    line-height: 45px;
+    margin-right: 20px;
 }
 
 .sliders p{
     font-family: "GothamLight";
     font-size: 15px;
-    line-height: 16px;
+    line-height: 18px;
     width: 75%;
     align-self: center;
-    padding-left: 5px;
 }
 
 .container-cinco-pilares {
     position: relative;
+}
+
+#paginador-blanco {
+    display: none;
 }
 
 .parrafos-side-pilares {
@@ -248,23 +258,21 @@ header {
 .plato-equilibrado-container {
     display: flex;
     align-items: center;
-    position: relative;
     margin: 50px 0;
 }
 
 #plato-equilibrado {
     order: -1;
-    position: absolute;
-    top: 0;
-    left: 8%;
+    flex: 50%;
+    text-align: right;
 }
 
-.parrafos-plato-equilibrado p:nth-of-type(1){
-    padding: 0 5% 0 55%;
+.parrafos-plato-equilibrado {
+    flex: 70%;
 }
 
-.parrafos-plato-equilibrado p:nth-of-type(2){
-    padding: 4% 5% 0 15%;
+.parrafos-plato-equilibrado p{
+    padding: 0 10% 0 10%;
 }
 
 .consulta-nutricional {
@@ -278,7 +286,7 @@ header {
 .consulta-nutricional > p {
     font-family: "GothamLight";
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
     margin: 0 auto;
     width: 80%;
 }
@@ -329,7 +337,7 @@ header {
 
 .talleres-intro .titulosH2, .talleres-intro .parrafo-intro {
     width: 60%;
-    margin: 20px auto;
+    margin: 40px auto;
     text-align: center;
 }
 
@@ -344,7 +352,7 @@ header {
 }
 
 .taller {
-    width: 257px;
+    width: 200px;
 }
 
 .taller-contenedor {
@@ -359,7 +367,7 @@ header {
 
 .talleres h3 {
     font-family: "GothamLight";
-    font-size: 17px;
+    font-size: 15px;
     line-height: 20px;
     color: var(--MarronTitulosyTexto);
     margin: 10px auto 15px;
@@ -374,7 +382,7 @@ header {
 .talleres p {
     font-family: "GothamLight";
     font-size: 14px;
-    line-height: 16px;
+    line-height: 18px;
     color: var(--Negrito);
     margin: 10px auto 15px;
     padding-bottom: 15px;
@@ -391,18 +399,8 @@ header {
     background-color: var(--Clarito);
     padding: 50px 0 50px;
     margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.antropometria div:nth-of-type(1) {
-    width: 100%;
-}
-
-.antropometria div:nth-of-type(1), .antropometria div:nth-of-type(3) {
-    width: 83%;
-    margin: 0 auto;
-    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .antropometria h2{
@@ -411,44 +409,29 @@ header {
     font-weight: 1;
     line-height: 33px;
     color: var(--MarronTitulosyTexto);
-    margin: 0 0 30px;
+    margin: 0 auto 30px;
+    text-align: center;
 }
 
-.antropometria div:nth-of-type(3) {
-    order: 2;
-    width: 45%;
+.antropometria p{
+    padding: 0 660px 0 5%;
     text-align: right;
 }
 
+
 .antropometria .imagen-antropometria {
-    background: url(../recursos/imagenes/antropometria.png) no-repeat center;
-    height: 371px;
-    width: 45%;
-    order: 3;
+    background: url(../recursos/imagenes/antropometria-desktop.jpg) no-repeat center;
+    background-size: contain;
+    height: 633.5px;
+    width: 581.7px;
     margin-right: 3%;
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
 /* CATERING */
 
-.secciones .imagen-catering {
-    background: url(../recursos/imagenes/catering-background.jpg) no-repeat center;
-}
-
-.secciones .imagen-catering2 {
-    background: url(../recursos/imagenes/catering-background2.png) no-repeat left;
-    height: 277px;
-}
-
-.grid-container {
-    margin: 10px auto 40px;
-    padding: 5px;
-}
-
-.grid-item {
-    width: 100px;
-    object-fit: cover;
-    margin-bottom: 5px;
-}
 
 /*===================== SOBRE MI DEL INICIO =====================*/
 
@@ -458,35 +441,41 @@ header {
 
 .sobre-mi-div{
     display: flex;
+    justify-content: space-around;
+    position: relative;
 }
 
 .sobre-mi-div .sobre-mi-foto-perfil {
-    background: url(../recursos/imagenes/sobremi.jpg) no-repeat center;
+    background: url(../recursos/imagenes/sobremi.jpg) no-repeat left;
     background-size: contain;
-    height: 257px;
-    order: 10;
-    flex: 40%;
+    height: 400px;
+    width: 250.78px;
+    position: absolute;
+    top: 0px;
+    left: 65%;
 }
 
 .sobre-mi-cita {
     text-align: right;
-    flex: 60%;
+    flex: 55%;
     padding-left: 12%;
+    padding-right: 40%;
     margin-top: 3%;
+    height: 320px;
 }
 
 .sobre-mi p:nth-of-type(1) {
-    margin: 10px 0;
+    margin: 20px 0;
     font-family: "elephant";
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 30px;
+    line-height: 30px;
     color: var(--MarronTitulosyTexto);
 }
 
 .sobre-mi p:nth-of-type(2) {
     margin-bottom: 20px;
     font-family: "GothamBold";
-    font-size: 15px;
+    font-size: 20px;
     color: #ffffff;
 }
 
@@ -510,7 +499,7 @@ header {
 
 .nutricion {
     width: 75%;
-    margin: 50px auto;
+    margin: 120px auto 80px;
     text-align: center;
     padding: 20px 0 40px;
 }
@@ -518,34 +507,40 @@ header {
 .parrafo-metodo {
     font-family: "GothamLight";
     font-weight: bold;
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 28px;
+    line-height: 30px;
     letter-spacing: 3px;
     color: var(--MarronTitulosyTexto);
 }
 
 .titulo-mayuscula {
     font-family: "elephant";
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 1;
-    line-height: 45px;
+    line-height: 47px;
     color: var(--MarronTitulosyTexto)
 }
 
 .parrafos {
     font-family: "GothamLight";
     font-weight: bold;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 23px;
     color: var(--Negrito);
-    margin: 20px 0 25px;
+    margin: 30px 0 35px;
+}
+
+.nutricion .parrafos {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 /*===================== TALLERES Y CURSOS DEL INICIO =====================*/
 
 .talleres-y-cursos {
     background-color: var(--Clarito);
-    padding: 40px 0 40px;
+    padding: 80px 0;
     display: flex;
     position: relative;
 }
@@ -559,8 +554,8 @@ header {
 
 .titulosH2 {
     font-family: "elephant";
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 40px;
+    line-height: 45px;
     color: var(--MarronTitulosyTexto);
     font-weight: 1;
 }
@@ -568,12 +563,13 @@ header {
 .intro .titulosH2 {
     width: 90%;
     margin: 0 auto 20px;
+    padding-left: 20%;
 }
 
 .intro .parrafos {
     width: 90%;
     text-align: right;
-    margin: 20px auto;
+    margin: 40px auto;
     padding-left: 20%;
 }
 
@@ -586,7 +582,7 @@ header {
 .talleres-y-cursos .talleres-foto{
     background: url(../recursos/imagenes/talleres.png) no-repeat center top;
     background-size: contain;
-    height: 240px;
+    height: 270px;
     width: 100%;
 }
 
@@ -595,17 +591,23 @@ header {
     text-align: center;
     order: 3;
     position: absolute;
-    top: 70%;
-    left: 30%;
+    top: 65%;
+    left: 38%;
 }
 
 /*===================== CATERING DEL INICIO =====================*/
 
 .catering {
     width: 85%;
-    margin: 50px auto;
+    margin: 80px auto;
     padding: 40px 0 40px;
     text-align: center;
+}
+
+.catering .parrafos {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*===================== CONSULTAS ONLINE DEL INICIO =====================*/
@@ -617,7 +619,7 @@ header {
 }
 
 .consultas-online .div-consultas {
-    width: 70%;
+    width: 50%;
     background-color: var(--BackRosita);
     opacity: 0.93;
     margin: 0 auto;
@@ -631,8 +633,8 @@ header {
 
 .consultas-online .parrafo-cita {
     font-family: "GothamMedium";
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 20px;
     letter-spacing: 3px;
     color: var(--MarronTitulosyTexto);
     margin: 10px auto; 
@@ -648,9 +650,9 @@ header {
 
 #parrafo-1, #parrafo-2, #parrafo-3 {
     font-family: "GothamLight";
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
-    line-height: 20px;
+    line-height: 22px;
     color: var(--Negrito);
     margin: 15px auto; 
     padding: 10px;
@@ -659,10 +661,10 @@ header {
 
 .contacto {
     font-family: "GothamLight";
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
-    line-height: 17px;
-    width: 70%;
+    line-height: 18px;
+    width: 50%;
     background-color: var(--MarronTitulosyTexto);
     margin: 0 auto;
     padding: 20px 3px 20px;
@@ -705,14 +707,14 @@ footer {
     margin: 0 auto 50px;
     padding: 10px 0 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 #logo-name-footer a{
     font-family: "elephant";
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 20px;
     color: #ffffff;
     text-decoration: none;
     text-align: center;
@@ -720,14 +722,14 @@ footer {
 
 #logo-name-footer a p:nth-child(2){
     font-family: "GothamLight";
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 4px;
 }
 
 #div-redes {
     position: absolute;
     top: 65%;
-    left: 80%;
+    left: 79%;
 }
 
 #div-redes img:hover {
@@ -745,6 +747,7 @@ footer {
     line-height: 13px;
     letter-spacing: 3px;
     padding: 0px 7px 0px;
+    margin: 0 10px;
 }
 
 #div-lista-footer ul li a{
