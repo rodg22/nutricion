@@ -149,7 +149,8 @@ header {
 /* NUTRICION */
 
 .secciones .imagen-nutricion {
-    background: url(../recursos/imagenes/nutricion-mobile.jpg) no-repeat center;
+    background: url(../recursos/imagenes/nutricion-mobile.png) no-repeat center;
+    background-size: cover;
 }
 
 .cita-nutricion {
