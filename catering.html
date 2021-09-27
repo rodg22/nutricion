@@ -37,14 +37,44 @@
         <main>
             <section class="secciones">
                 <div class="div-imagen imagen-catering"></div>
-                <div class="div-contenido">
+                <div class="div-contenido catering">
                     <h2 class="titulosH2">Catering</h2>
                     <p class="parrafos">Caterings saludables, vegetarianos y veganos, con opción gluten free en Barcelona y alrededores.</p>
                 </div>
-                <div class="div-imagen imagen-catering2"></div>
-                <div class="div-contenido">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide fotos-catering">
+                                <div class="foto-catering foto-catering-1"></div>
+                        </div>
+                        <div class="swiper-slide fotos-catering">
+                                <div class="foto-catering foto-catering-2"></div>
+                        </div>
+                        <div class="swiper-slide fotos-catering">
+                                <div class="foto-catering foto-catering-3"></div>
+                        </div>
+                        <div class="swiper-slide fotos-catering">
+                                <div class="foto-catering foto-catering-4"></div>
+                        </div>
+                        <div class="swiper-slide fotos-catering">
+                                <div class="foto-catering foto-catering-5"></div>
+                        </div>
+                        <div class="swiper-slide fotos-catering">
+                                <div class="foto-catering foto-catering-6"></div>
+                        </div>
+                        <div class="swiper-slide fotos-catering">
+                                <div class="foto-catering foto-catering-7"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-button-next" style="color: #ffffff"></div>
+                    <div class="swiper-button-prev" style="color: #ffffff"></div>
+                    <div class="swiper-pagination" id="paginador-blanco"></div>
+                </div>
+                <div class="div-contenido catering">
                     <p class="parrafos">Selección de materia prima de excelencia, de temporada y de proximidad, que cubra todas las necesidades nutricionales y se adapte a los gustos de cada cliente.</p>
-                    <p class="parrafos">La combinación de nutrientes y sabores es mi prioridad, porque comer saludable nunca fue tan delicioso. Platos fríos y calientes, postres y meriendas para todo tipo de evento. No dudes en consultar por tu presupuesto.</p>
+                    <p class="parrafos">La combinación de nutrientes y sabores es mi prioridad, porque comer saludable nunca fue tan delicioso. Platos fríos y calientes, postres y meriendas para todo tipo de evento.</p>
+                    <p class="parrafos">No dudes en consultar por tu presupuesto.</p>
                 </div>
                 <div class="grid-container">
                     <img class="grid-item" src="recursos/imagenes/grilla catering/imagen-1.jpg" alt="imagen-1">
@@ -92,5 +122,9 @@
         <script src="js/grilla.js"></script>
         <script src="js/jquery.js"></script>
         <script src="js/javascript.js"></script>
+        <!-- Swiper JS -->
+        <script src="js/swiper.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script src="js/iniciarSwiperConLoop.js"></script>
     </body>
 </html>

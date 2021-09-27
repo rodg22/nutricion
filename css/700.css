@@ -96,8 +96,10 @@ header {
 /* SOBRE MI */
 
 .secciones .imagen-sobre-mi {
-    background: url(../recursos/imagenes/sobremi-background.png) no-repeat center;
-    height: 150px;
+    background: url(../recursos/imagenes/sobremi-tablet.png) no-repeat right;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 250px;
     margin: 0 auto 10%;
 }
 
@@ -105,6 +107,32 @@ header {
     display: flex;
     position: relative;
     margin: 40px 0 0;
+}
+
+.flex-container-sobre-mi::before{
+    background-image: url(../recursos/imagenes/firulete-desktop2.png);
+    background-size: 80px 120px;
+    display: inline-block;
+    width: 80px;
+    height: 120px;
+    position: absolute; 
+    top: 40%;
+    right: 0;
+    content: "";
+    z-index: -1;
+}
+
+.flex-container-sobre-mi::after{
+    background-image: url(../recursos/imagenes/firulete-desktop.png);
+    background-size: 220px 100px;
+    display: inline-block;
+    width: 220px;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    bottom: 27%;
+    content: "";
+    z-index: 10;
 }
 
 .sobre-mi-foto {
@@ -143,8 +171,9 @@ header {
 /* NUTRICION */
 
 .secciones .imagen-nutricion {
-    background: url(../recursos/imagenes/nutricion-background.jpg) no-repeat center;
-    height: 150px;
+    background: url(../recursos/imagenes/nutricion-tablet.png) no-repeat center center;
+    background-size: cover;
+    height: 250px;
     margin: 0 auto 10%;
 }
 
@@ -322,8 +351,9 @@ header {
 /* TALLERES Y CURSOS */
 
 .secciones .imagen-talleres-y-cursos {
-    background: url(../recursos/imagenes/talleresycursos-background.jpg) no-repeat center;
-    height: 150px;
+    background: url(../recursos/imagenes/talleres.jpg) no-repeat center;
+    background-size: cover;
+    height: 250px;
     margin: 0 auto 10%;
 }
 
@@ -361,7 +391,7 @@ header {
     font-family: "GothamLight";
     font-size: 17px;
     line-height: 20px;
-    color: var(--MarronTitulosyTexto);
+    color: #ffffff;
     margin: 10px auto 15px;
     width: 95%;
     text-align: center;
@@ -374,8 +404,9 @@ header {
 .talleres p {
     font-family: "GothamLight";
     font-size: 14px;
+    font-weight: 1;
     line-height: 16px;
-    color: var(--Negrito);
+    color: #ffffff;
     margin: 10px auto 15px;
     padding-bottom: 15px;
     width: 95%;
@@ -383,8 +414,8 @@ header {
 }
 
 .taller-contenedor {
-    box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
+    background-color: var(--BackRosita);
 } 
 
 .antropometria {
@@ -421,7 +452,7 @@ header {
 }
 
 .antropometria .imagen-antropometria {
-    background: url(../recursos/imagenes/antropometria.png) no-repeat center;
+    background: url(../recursos/imagenes/antropometria-mobile.jpg) no-repeat center;
     height: 371px;
     width: 45%;
     order: 3;
@@ -431,12 +462,38 @@ header {
 /* CATERING */
 
 .secciones .imagen-catering {
-    background: url(../recursos/imagenes/catering-background.jpg) no-repeat center;
+    background: url(../recursos/imagenes/catering-tablet.png) no-repeat center;
+    background-size: cover;
+    height: 250px;
+    margin: 0 auto 10%;
 }
 
-.secciones .imagen-catering2 {
-    background: url(../recursos/imagenes/catering-background2.png) no-repeat left;
-    height: 277px;
+.foto-catering-1 {
+    background: url(../recursos/imagenes/catering-1.jpg) no-repeat center center;
+}
+.foto-catering-2 {
+    background: url(../recursos/imagenes/catering-2.jpg) no-repeat center center;
+}
+.foto-catering-3 {
+    background: url(../recursos/imagenes/catering-3.jpg) no-repeat center center;
+}
+.foto-catering-4 {
+    background: url(../recursos/imagenes/catering-4.jpg) no-repeat center center;
+}
+.foto-catering-5 {
+    background: url(../recursos/imagenes/catering-5.jpg) no-repeat center center;
+}
+.foto-catering-6 {
+    background: url(../recursos/imagenes/catering-6.jpg) no-repeat center center;
+}
+.foto-catering-7 {
+    background: url(../recursos/imagenes/catering-7.jpg) no-repeat center center;
+}
+
+.foto-catering{
+    background-size: cover;
+    height: 250px;
+    position: relative;
 }
 
 .grid-container {
@@ -454,6 +511,31 @@ header {
 
 .sobre-mi{
     background-color: var(--BackRosita);
+    position: relative;
+}
+
+.sobre-mi::before{
+    background-image: url(../recursos/imagenes/firulete-1.png);
+    background-size: 90px 120px;
+    display: inline-block;
+    width: 90px;
+    height: 120px;
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    content: "";
+}
+
+.sobre-mi::after{
+    background-image: url(../recursos/imagenes/firulete-2.png);
+    background-size: 120px 60px;
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    position: absolute; 
+    bottom: -25px;
+    right: 0px;
+    content: "";
 }
 
 .sobre-mi-div{
@@ -580,13 +662,13 @@ header {
 .flex-item-talleres-foto {
     width: 100%;
     order: 5;
-    flex: 40%;
+    flex: 50%;
 }
 
 .talleres-y-cursos .talleres-foto{
-    background: url(../recursos/imagenes/talleres.png) no-repeat center top;
-    background-size: contain;
-    height: 240px;
+    background: url(../recursos/imagenes/talleres-mobile.png) no-repeat center;
+    background-size: cover;
+    height: 230px;
     width: 100%;
 }
 
@@ -595,15 +677,15 @@ header {
     text-align: center;
     order: 3;
     position: absolute;
-    top: 70%;
-    left: 30%;
+    top: 77%;
+    left: 25%;
 }
 
 /*===================== CATERING DEL INICIO =====================*/
 
 .catering {
     width: 85%;
-    margin: 50px auto;
+    margin: 30px auto;
     padding: 40px 0 40px;
     text-align: center;
 }

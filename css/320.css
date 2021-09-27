@@ -143,7 +143,7 @@ header {
 /* SOBRE MI */
 
 .secciones .imagen-sobre-mi {
-    background: url(../recursos/imagenes/sobremi-background.png) no-repeat center;
+    background: url(../recursos/imagenes/sobremi-mobile.png) no-repeat center;
 }
 
 /* NUTRICION */
@@ -235,13 +235,15 @@ header {
 }
 
 .consulta-nutricional .beneficios-consulta img{
-    width: 60%;
+    width: 128px;
+    height: 128px;
 }
 
 /* TALLERES Y CURSOS */
 
 .secciones .imagen-talleres-y-cursos {
-    background: url(../recursos/imagenes/talleresycursos-background.jpg) no-repeat center;
+    background: url(../recursos/imagenes/talleres-mobile.png) no-repeat center;
+    background-size: cover;
 }
 
 .talleres img {
@@ -253,7 +255,7 @@ header {
     font-family: "GothamLight";
     font-size: 17px;
     line-height: 20px;
-    color: var(--MarronTitulosyTexto);
+    color: #ffffff;
     margin: 10px auto 15px;
     width: 95%;
 }
@@ -261,17 +263,18 @@ header {
 .talleres p {
     font-family: "GothamLight";
     font-size: 14px;
+    font-weight: 1;
     line-height: 16px;
-    color: var(--Negrito);
+    color: #ffffff;
     margin: 10px auto 15px;
     padding-bottom: 15px;
     width: 95%;
 }
 
 .taller-contenedor {
-    box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
     height: 342px;
+    background-color: var(--BackRosita);
 }
 
 #taller-1, #taller-2, #taller-3, #taller-4, #taller-5 {
@@ -305,19 +308,43 @@ header {
 }
 
 .antropometria .imagen-antropometria {
-    background: url(../recursos/imagenes/antropometria.png) no-repeat center;
+    background: url(../recursos/imagenes/antropometria-mobile.jpg) no-repeat center;
     height: 371px;
 }
 
 /* CATERING */
 
 .secciones .imagen-catering {
-    background: url(../recursos/imagenes/catering-background.jpg) no-repeat center;
+    background: url(../recursos/imagenes/catering-mobile.png) no-repeat center;
+    background-size: cover;
 }
 
-.secciones .imagen-catering2 {
-    background: url(../recursos/imagenes/catering-background2.png) no-repeat left;
-    height: 277px;
+.foto-catering-1 {
+    background: url(../recursos/imagenes/catering-1.jpg) no-repeat center center;
+}
+.foto-catering-2 {
+    background: url(../recursos/imagenes/catering-2.jpg) no-repeat center center;
+}
+.foto-catering-3 {
+    background: url(../recursos/imagenes/catering-3.jpg) no-repeat center center;
+}
+.foto-catering-4 {
+    background: url(../recursos/imagenes/catering-4.jpg) no-repeat center center;
+}
+.foto-catering-5 {
+    background: url(../recursos/imagenes/catering-5.jpg) no-repeat center center;
+}
+.foto-catering-6 {
+    background: url(../recursos/imagenes/catering-6.jpg) no-repeat center center;
+}
+.foto-catering-7 {
+    background: url(../recursos/imagenes/catering-7.jpg) no-repeat center center;
+}
+
+.foto-catering{
+    background-size: cover;
+    height: 250px;
+    position: relative;
 }
 
 .grid-container {
@@ -335,6 +362,24 @@ header {
 
 .sobre-mi{
     background-color: var(--BackRosita);
+    position: relative;
+    overflow: hidden;
+}
+
+.sobre-mi::before{
+    content: url(../recursos/imagenes/firulete-mobile.png);
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 18px;
+}
+
+.sobre-mi::after{
+    content: url(../recursos/imagenes/firulete-mobile2.png);
+    display: block;
+    position: absolute;
+    right: -16px;
+    bottom: 10px;
 }
 
 .sobre-mi-div{
@@ -342,10 +387,11 @@ header {
     padding: 20px 0 40px;
     width: 75%;
     text-align: center;
+    position: relative;
 }
 
 .sobre-mi-div .sobre-mi-foto-perfil {
-    background: url(../recursos/imagenes/perfil-mobile1.png) no-repeat center;
+    background: url(../recursos/imagenes/perfil-mobile.png) no-repeat center;
     height: 122px;
 }
 
@@ -441,9 +487,9 @@ header {
 }
 
 .talleres-y-cursos .talleres-foto{
-    background: url(../recursos/imagenes/talleres.png) no-repeat center top;
+    background: url(../recursos/imagenes/talleres-mobile.png) no-repeat center;
     background-size: cover;
-    height: 240px;
+    height: 230px;
     width: 100%;
     margin-bottom: 30px;
 }
