@@ -472,11 +472,33 @@ header {
     margin: 0 auto 5%;
 }
 
-.secciones .foto-catering1 {
-    background: url(../recursos/imagenes/catering-1.jpg) no-repeat center;
+.foto-catering-1 {
+    background: url(../recursos/imagenes/catering-1.jpg) no-repeat center center;
+}
+.foto-catering-2 {
+    background: url(../recursos/imagenes/catering-2.jpg) no-repeat center center;
+}
+.foto-catering-3 {
+    background: url(../recursos/imagenes/catering-3.jpg) no-repeat center center;
+}
+.foto-catering-4 {
+    background: url(../recursos/imagenes/catering-4.jpg) no-repeat center center;
+}
+.foto-catering-5 {
+    background: url(../recursos/imagenes/catering-5.jpg) no-repeat center center;
+}
+.foto-catering-6 {
+    background: url(../recursos/imagenes/catering-6.jpg) no-repeat center center;
+}
+.foto-catering-7 {
+    background: url(../recursos/imagenes/catering-7.jpg) no-repeat center center;
+}
+
+.foto-catering{
     background-size: contain;
     height: 400px;
     width: 100%;
+    position: relative;
 }
 
 .grid-container {

@@ -72,7 +72,7 @@ header {
 
 .menu ul li a{
     margin: 0 0 0 30px;
-    padding: 30px 10px 5px 0px;
+    padding: 30px 10px 10px 0px;
     color: var(--Negrito);
     text-decoration: none;
     display: inline-block;
@@ -247,7 +247,7 @@ header {
 }
 
 .talleres img {
-    width: 230px;
+    width: 257px;
     margin: 0 auto;
 }
 
@@ -272,8 +272,9 @@ header {
 }
 
 .taller-contenedor {
-    margin-bottom: 10px;
-    height: 342px;
+    margin: 0 auto 10px;
+    width: 257px;
+    height: 350px;
     background-color: var(--BackRosita);
 }
 
