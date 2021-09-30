@@ -666,6 +666,11 @@ header {
     border-radius: 40px;
 }
 
+.botones a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .botones:hover {
     cursor: pointer;
     background-color: var(--TierraBotonesHover);
@@ -853,6 +858,11 @@ header {
 }
 
 
+.contacto img {
+    width: 20px;
+    height: 20px;
+}
+
 .contacto img:hover {
     transform: scale(0.9);
 }
@@ -903,6 +913,10 @@ footer {
     position: absolute;
     top: 65%;
     left: 79%;
+}
+
+#div-redes img{
+    width: 30px;
 }
 
 #div-redes img:hover {
