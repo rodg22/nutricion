@@ -266,7 +266,7 @@ header {
 }
 
 #paginador-blanco {
-    display: none;
+    display: block;
 }
 
 .parrafos-side-pilares {
