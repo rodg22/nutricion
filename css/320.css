@@ -357,6 +357,72 @@ header {
     width: 100px;
     object-fit: cover;
     margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#item-1 {
+    background: url(../recursos/imagenes/grilla-catering/mobile/imagen-1.jpg) no-repeat center center;
+    height: 100px;
+}
+
+#item-2 {
+    background: url(../recursos/imagenes/grilla-catering/mobile/imagen-2.jpg) no-repeat center center;
+    height: 100px;
+}
+
+#item-3 {
+    background: url(../recursos/imagenes/grilla-catering/mobile/imagen-3.jpg) no-repeat center center;
+    height: 100px;
+}
+
+#item-4 {
+    background: url(../recursos/imagenes/grilla-catering/mobile/imagen-4.jpg) no-repeat center center;
+    height: 132.77px;
+}
+
+#item-5 {
+    background: url(../recursos/imagenes/grilla-catering/mobile/imagen-5.jpg) no-repeat center center;
+    height: 75px;
+}
+
+#item-6 {
+    background: url(../recursos/imagenes/grilla-catering/mobile/imagen-6.jpg) no-repeat center center;
+    height: 75px;
+}
+
+#item-7 {
+    background: url(../recursos/imagenes/grilla-catering/mobile/imagen-7.jpg) no-repeat center center;
+    height: 132.77px;
+}
+
+#item-8 {
+    background: url(../recursos/imagenes/grilla-catering/mobile/imagen-8.jpg) no-repeat center center;
+    height: 75px;
+}
+
+#item-9 {
+    background: url(../recursos/imagenes/grilla-catering/mobile/imagen-9.jpg) no-repeat center center;
+    height: 75px;
+}
+
+#item-10 {
+    background: url(../recursos/imagenes/grilla-catering/mobile/imagen-10.jpg) no-repeat center center;
+    height: 75px;
+}
+
+#item-11 {
+    background: url(../recursos/imagenes/grilla-catering/mobile/imagen-11.jpg) no-repeat center center;
+    height: 100px;
+}
+
+#item-12 {
+    background: url(../recursos/imagenes/grilla-catering/mobile/imagen-12.jpg) no-repeat center center;
+    height: 100px;
+}
+
+#item-13 {
+    background: url(../recursos/imagenes/grilla-catering/mobile/imagen-13.jpg) no-repeat bottom left;
+    height: 75px;
 }
 
 /*===================== SOBRE MI DEL INICIO =====================*/
@@ -512,7 +578,7 @@ header {
 /*===================== CONSULTAS ONLINE DEL INICIO =====================*/
 
 .consultas-online {
-    background: url(../recursos/imagenes/cherrysBackground.png) no-repeat;
+    background: url(../recursos/imagenes/cherrysBackground.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }

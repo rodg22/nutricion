@@ -435,6 +435,13 @@ header {
     overflow: hidden;
 }
 
+.separador-antropometria {
+    background-color: var(--Clarito);
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
 .antropometria h2{
     font-family: "elephant";
     font-size: 30px;
@@ -495,21 +502,86 @@ header {
 }
 
 .foto-catering{
-    background-size: contain;
-    height: 400px;
+    background-size: cover;
+    height: 60vh;
     width: 100%;
     position: relative;
 }
 
 .grid-container {
-    margin: 10px auto 40px;
-    padding: 5px;
+    margin: 10px auto 80px;
 }
 
 .grid-item {
-    width: 100px;
+    width: 300px;
     object-fit: cover;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+
+#item-1 {
+    background: url(../recursos/imagenes/grilla-catering/tablet-desktop/1.jpg) no-repeat center center;
+    height: 300px;
+}
+
+#item-2 {
+    background: url(../recursos/imagenes/grilla-catering/tablet-desktop/2.jpg) no-repeat center center;
+    height: 300px;
+}
+
+#item-3 {
+    background: url(../recursos/imagenes/grilla-catering/tablet-desktop/3.jpg) no-repeat center center;
+    height: 300px;
+}
+
+#item-4 {
+    background: url(../recursos/imagenes/grilla-catering/tablet-desktop/4.jpg) no-repeat center center;
+    height: 398px;
+}
+
+#item-5 {
+    background: url(../recursos/imagenes/grilla-catering/tablet-desktop/5.jpg) no-repeat center center;
+    height: 225px;
+}
+
+#item-6 {
+    background: url(../recursos/imagenes/grilla-catering/tablet-desktop/6.jpg) no-repeat center center;
+    height: 216px;
+}
+
+#item-7 {
+    background: url(../recursos/imagenes/grilla-catering/tablet-desktop/7.jpg) no-repeat center center;
+    height: 400px;
+}
+
+#item-8 {
+    background: url(../recursos/imagenes/grilla-catering/tablet-desktop/8.jpg) no-repeat center center;
+    height: 225px;
+}
+
+#item-9 {
+    background: url(../recursos/imagenes/grilla-catering/tablet-desktop/9.jpg) no-repeat center center;
+    height: 225px;
+}
+
+#item-10 {
+    background: url(../recursos/imagenes/grilla-catering/tablet-desktop/10.jpg) no-repeat center center;
+    height: 225px;
+}
+
+#item-11 {
+    background: url(../recursos/imagenes/grilla-catering/tablet-desktop/11.jpg) no-repeat center center;
+    height: 300px;
+}
+
+#item-12 {
+    background: url(../recursos/imagenes/grilla-catering/tablet-desktop/12.jpg) no-repeat center center;
+    height: 300px;
+}
+
+#item-13 {
+    background: url(../recursos/imagenes/grilla-catering/tablet-desktop/13.jpg) no-repeat center center;
+    height: 300px;
 }
 
 /*===================== SOBRE MI DEL INICIO =====================*/
@@ -717,7 +789,7 @@ header {
 /*===================== CONSULTAS ONLINE DEL INICIO =====================*/
 
 .consultas-online {
-    background: url(../recursos/imagenes/cherrysBackground.png) no-repeat;
+    background: url(../recursos/imagenes/cherrysBackground.jpg) no-repeat left center;
     background-size: cover;
     background-attachment: fixed;
 }
