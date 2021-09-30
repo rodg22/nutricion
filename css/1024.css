@@ -664,11 +664,7 @@ header {
     border: none;
     padding: 8px 50px;
     border-radius: 40px;
-}
-
-.botones a{
-    text-decoration: none;
-    color: #ffffff;
+    display: inline-block;
 }
 
 .botones:hover {
