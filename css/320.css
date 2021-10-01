@@ -449,6 +449,10 @@ header {
     bottom: 10px;
 }
 
+.sobre-mi h2{
+    display: none;
+}
+
 .sobre-mi-div{
     margin: 20px auto;
     padding: 20px 0 40px;

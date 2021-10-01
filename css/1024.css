@@ -615,6 +615,10 @@ header {
     content: "";
 }
 
+.sobre-mi h2{
+    display: none;
+}
+
 .sobre-mi-div{
     display: flex;
     justify-content: space-around;
